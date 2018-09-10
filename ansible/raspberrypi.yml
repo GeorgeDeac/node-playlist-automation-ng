@@ -1,0 +1,16 @@
+---
+- name: raspberrypi
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    pm2_environment: "raspberrypi"
+    user: "pi"
+  roles:
+    - system
+    - icecast2
+    - mpd
+    - mpc
+    - ffmpeg
+    - nodejs
+    - pm2
+

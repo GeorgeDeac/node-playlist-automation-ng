@@ -1,0 +1,14 @@
+---
+- name: main
+  hosts: all
+    vars:
+      pm2_environment: "vagrant"
+      user: "vagrant"
+  roles:
+    - system
+    - icecast2
+    - mpd
+    - mpc
+    - ffmpeg
+    - nodejs
+    - pm2
