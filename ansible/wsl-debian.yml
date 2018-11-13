@@ -1,0 +1,15 @@
+---
+- name: wsl-debian
+  hosts: 127.0.0.1
+  connection: local
+  vars:
+    environment: "wsl-debian"
+    user: "seek"
+  roles:
+    - system
+    - icecast2
+    - mpd
+    - mpc
+    - ffmpeg
+    - avahi
+

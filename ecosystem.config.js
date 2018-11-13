@@ -22,5 +22,10 @@ module.exports = {
             NODE_DEBUG: true,
             restart: false
         },
+        'env_wsl-debian': {
+            NODE_ENV: 'wsl-debian',
+            NODE_DEBUG: true,
+            restart: false
+        },
     }]
 };

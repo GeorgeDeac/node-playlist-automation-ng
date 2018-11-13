@@ -1,0 +1,10 @@
+---
+- name: INSTALLING AVAHI DAEMON
+  apt: pkg={{ item }} state=latest
+  become: yes
+  with_items:
+    - avahi-daemon
+    - avahi-discover
+    - libnss-mdns
+
+

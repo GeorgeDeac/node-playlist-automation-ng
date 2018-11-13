@@ -4,7 +4,8 @@
   "description": "audio streaming playlist automation",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "pm2" : "pm2 start ecosystem.config.js"
   },
   "author": "Matthias Kallenbach",
   "license": "GPL-3.0",
